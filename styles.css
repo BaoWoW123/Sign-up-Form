@@ -1,0 +1,60 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: x-large;
+    background:black;
+    height: 99vh;
+    min-width: fit-content;
+    display: flex;
+    margin: 0px 0px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+img {
+    width: 40vw;
+    height: 100vh;
+}
+#rightContent {
+    background:white;
+    margin: 0px auto;
+}
+#info {
+
+    margin: 30px;
+}
+Form {
+    padding: 5vh 0px;
+    border-bottom: 5px;
+    border-bottom-color: red;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    border: solid lightblue
+}
+fieldset > div {
+    display: flex;
+    align-self: space-evenly;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.firstName, .lastName, for[firstName] {
+    color: lightblue;
+    background-color: red;
+}
+legend {
+    color: lightblue;
+}
+
+#signIn {
+    font-size: x-large;
+    color: lightblue;
+    background: none;
+    border: none;
+}
+#signIn:hover {
+    color: aliceblue;
+}
