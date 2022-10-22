@@ -8,53 +8,85 @@ body {
     display: flex;
     margin: 0px 0px;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 img {
     width: 40vw;
     height: 100vh;
 }
-#rightContent {
-    background:white;
-    margin: 0px auto;
+.rightContent {
+    margin: 0px 3vw;
 }
-#info {
-
-    margin: 30px;
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 18vw;
 }
 Form {
-    padding: 5vh 0px;
-    border-bottom: 5px;
-    border-bottom-color: red;
+    padding:3vh auto;
 }
 fieldset {
     display: flex;
-    flex-direction: column;
+    margin-right:8vw;
     padding: 50px;
     border-radius: 20px;
-    border: solid lightblue
+    border: solid lightblue;
 }
 fieldset > div {
     display: flex;
-    align-self: space-evenly;
-    justify-content: space-evenly;
-    padding: 10px;
+    flex-flow: column wrap;
+    color: lightskyblue;
+    font-size: medium;
+    width: 12vw;
+    padding-right: 5vw;
 }
-.firstName, .lastName, for[firstName] {
-    color: lightblue;
-    background-color: red;
-}
+
 legend {
     color: lightblue;
 }
 
+div > label {
+    padding-top: 20px;
+}
+
+input {
+    padding: 1vh;
+    border-radius: 5px;   
+}
+
+input:hover, input:focus, .submit:hover {
+    border-radius: 10px;
+    transition: .2s;
+    border: 2px solid lightskyblue;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~error-message{
+    border: 2px solid red;
+}
+#bottomRight {
+    margin: 3vh auto;
+}
 #signIn {
     font-size: x-large;
-    color: lightblue;
+    color: lightskyblue;
     background: none;
     border: none;
 }
+
 #signIn:hover {
     color: aliceblue;
+}
+
+.submit {
+    border: 3px solid none;
+    color:white;
+    border-radius:5px;
+    background:lightskyblue;
+    padding:10px 40px;
+    margin-top: 3vh;
+    font-size: larger;
 }

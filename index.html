@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <div class="image">    
@@ -14,8 +15,9 @@
     <div class="rightContent">
         <div class="topRight">
             <div class="info">
-                This is not a real online service! You know you need this product.
-                Sign up now for the best deal of your life!
+                This is not a real online service! 
+                You know you need something like this in our life to help realize your deepest dreams. 
+                Sign up now to get started.
                 <p>You know you want to.</p>
         </div>
 
@@ -23,33 +25,26 @@
             <fieldset>
                 <legend>Sign-up Here</legend>
                 <div>
-                    <label for="firstName">First Name
-                    <input type="text" id="firstName"required placeholder="Bob"></label>
-                    <label for="lastName" >Last Name
-                    <input type="text" id="lastName" required placeholder="Smith"/></label>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required placeholder="Bob">
+                    <label for="email">E-mail</label>
+                    <input type="email" required placeholder="you@example.com">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>    
                 </div>    
                 <div>
-                    <label for="email">E-mail
-                    <input type="email" required placeholder="you@example.com"></label>
-                    <label for="number">Phone Number
-                    <input type="tel" placeholder="(123) 456-7890"></label>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required placeholder="Smith"/>
+                    <label for="number">Phone Number</label>
+                    <input type="tel" placeholder="(123) 456-7890"/>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>    
+                </div>   
                 </div>
-                <div>
-                    <label for="password">Password
-                    <input type="password" required></label>
-                    <label for="confirmpw">Confirm Password
-                    <input type="password" required></label>
-                </div>    
-
-                </div>
+                <button class="submit" type="submit" id="submit">Create Account</button>
             </fieldset>
         </Form>
-        <div id="bottomRight">
-            <button class="submit" type="submit">Create Account</button>
-            <p>Already have an account? <button id="signIn">Sign in</button></p>
-        </div>
-            
-        </div>
+        <p>Already have an account? <button id="signIn">Sign in</button></p>
     </div>
    
 </body>
